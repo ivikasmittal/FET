@@ -40,6 +40,8 @@
 }
 
 .content {
+  position: fixed;
+  top: 200px;
 	padding-left: 16px;
 	padding-top: 16px;/* 
 	margin-left: 16px;
