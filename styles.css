@@ -40,13 +40,10 @@
 }
 
 .content {
-  position: fixed;
+  position: relative;
   top: 50px;
-/*	padding-left: 16px;
-	padding-top: 16px; 
-	margin-left: 16px;
-	margin-top: 16px;
-*/}
+  left: 10px;
+}
 
 .differences {
 	padding-left: 32px;
