@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <title></title>
 
-    <link rel="stylesheet" href="style_simulation.css">
+    <link rel="stylesheet" href="fet_simulation_transfer.css">
 </head>
 
 <body>
     <table>
-       
+        <tr>
+            <th>Drain to Source Current</th>
+            <td><input type="number" id="fidss"></td>
+        </tr>
         <tr>
             <th>Pinch off Voltage</th>
             <td><input type="number" id="fvp"></td>
@@ -19,17 +22,8 @@
             <th>Gate-Source Voltage</th>
             <td>
                 <div class="slidecontainer">
-                    <input type="range" min="-2" max="0" class="slider" id="fids">
+                    <input type="range" min="-5" max="0" class="slider" id="fvgs">
                     <p>Value: <span id="demo"></span></p>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Drain-Source Voltage</th>
-            <td>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="10" class="slider1" id="fvg">
-                    <p>Value: <span id="dem"></span></p>
                 </div>
             </td>
         </tr>
@@ -43,23 +37,22 @@
         </tr>
         <tr>
             <td colspan="2">
-                  <input type="button" id="b2" value="Add to Table" onclick="addRow()">
-                        ____________
-                        <input type="button" id="b3" value="Refresh the graph" onclick="refresh()">
+                <input type="button" id="b2" value="Add to Table" onclick="addRow()">
+
             </td>
         </tr>
     </table>
     <table id="obsTable">
         <tr>
-            <th>Drain-Source Voltage</th>
+            <th>Gate-Source Voltage</th>
             <th>Drain Current</th>
         </tr>
     </table>
     </div>
     <button id="renderButton">Add DataPoint & Render</button>
-    <div id="chartContainer" style="height: 300px; width: 1000px;">
+    <div id="chartContainer" style="height: 270px; width: 550px;">
     </div>
-    <script src="fet_simulation.js"></script>
+    <script src="fet.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 </body>
