@@ -48,14 +48,34 @@ var myQuestions = [
 		correctAnswer: 'b'
 	},
 	{
-		question: "The input impedance of a JFET is ______ that of an ordinary transistor",
+		question: "The JFET stands for ______",
 		answers: {
-			a: 'Equal to',
-			b: 'More than',
-			c: 'Less than',
+			a: 'Junction Field Effect Transistor',
+			b: 'Jet Field Effect Transistor',
+			c: 'Joint Field Effect Transistor',
+			d: 'Jammed Field Effect Transistor',
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "When drain voltage equals the pinch-off-voltage, then drain current ______ with the increase in drain voltage",
+		answers: {
+			a: 'Decreases',
+			b: 'Increases',
+			c: 'Remains Same',
 			d: 'None of the above',
 		},
-		correctAnswer: 'b'
+		correctAnswer: 'c'
+	},
+	{
+		question: "In a JFET, when drain voltage is equal to pinch-off voltage, the depletion layers ______",
+		answers: {
+			a: 'Almost touch each other',
+			b: 'Have a large gap',
+			c: 'Have a moderate gap',
+			d: 'Overlap on each other',
+		},
+		correctAnswer: 'a'
 	}
 ];
 

@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <title></title>
 
-    <link rel="stylesheet" href="fet_simulation_transfer.css">
+    <link rel="stylesheet" href="simulation_transfer.css">
 </head>
 
 <body>
     <table>
         <tr>
-            <th>Drain to Source Current</th>
+            <th> Gate- Source Current</th>
             <td><input type="number" id="fidss"></td>
         </tr>
         <tr>
@@ -19,13 +19,22 @@
             <td><input type="number" id="fvp"></td>
         </tr>
         <tr>
-            <th>Gate-Source Voltage</th>
+            <th>Drain-Source Voltage</th>
             <td>
-                <div class="slidecontainer">
-                    <input type="range" min="-5" max="0" class="slider" id="fvgs">
-                    <p>Value: <span id="demo"></span></p>
+                <div class="slidecontainer1">
+                    <input type="range" min="-50" max="50" class="slider1" id="fvgs1">
+                    <p>Value: <span id="demo1"></span></p>
                 </div>
             </td>
+        </tr>
+        <tr>
+          <th> Drain resistance</th>
+          <td>
+               <div class="slidecontainer2">
+                    <input type="range" min="100" max="1000" class="slider2" id="fvgs2">
+                    <p>Value: <span id="demo2"></span></p>
+            </div>
+          </td>
         </tr>
         <tr>
             <th><input type="button" id="b1" style="width:100px" value="Drain Current" onclick="calculate();" /></th>
@@ -35,7 +44,7 @@
                 </div>
             </td>
         </tr>
-        <tr>
+      <tr>
             <td colspan="2">
                 <input type="button" id="b2" value="Add to Table" onclick="addRow()">
 
@@ -49,10 +58,11 @@
         </tr>
     </table>
     </div>
+    <p>&nbsp;</p>
     <button id="renderButton">Add DataPoint & Render</button>
-    <div id="chartContainer" style="height: 270px; width: 550px;">
+    <div id="chartContainer" style="height: 270px; width: 100%;">
     </div>
-    <script src="fet.js"></script>
+    <script src="simulation_transfer.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 </body>

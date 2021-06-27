@@ -42,10 +42,6 @@ window.onload = function() {
         title: {
             text: "Accepting DataPoints from User Input"
         },
-        axisX: {
-            minimum: -5,
-            maximum: 0
-        },
         data: [{
             type: "line",
             dataPoints: dps

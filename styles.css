@@ -70,3 +70,36 @@
 	font-size: 24px;
 	font-weight: 800;
 }
+/* 
+.simulation_link{
+	width: auto;
+	margin: auto; 
+	border: 2px solid #333;
+	padding: 10px;
+	text-decoration: none;
+	height: fit-content;
+	font-size: 2em;
+	background-color: aqua;
+} */
+
+.simulation_link{
+	width: 700px;
+	margin: auto;	
+	border: 2px solid #333;
+	background-color: #4E9CAF;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.simulation_link a{
+	text-decoration: none;
+	justify-content: center;
+}
+
+.simulation_link a:hover{
+	background-color: #20B2AA;
+}
+
+#simulation_heading{
+	text-align: center;
+}

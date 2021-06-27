@@ -1,21 +1,83 @@
 var myQuestions = [
 	{
-		question: "What is 10/2?",
+		question: "Which of the following statement is true about FET?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
+			a: 'It has high output impedance',
+			b: 'It has high input impedance',
+			c: 'It has low input impedan',
+			d: 'It does not offer any resistance'
 		},
 		correctAnswer: 'b'
 	},
 	{
-		question: "What is 30/3?",
+		question: "For a FET when will maximum current flows?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
+			a: 'Vgs = 0V',
+			b: '5Vgs = 0v and Vds >= |Vp|',
+			c: 'VDS >= |Vp|',
+			d: 'Vp = 0'
+		},
+		correctAnswer: 'b'
+	},
+	{
+		question: "What is the value of current when the gate to source voltage is less than the pinch off voltage?",
+		answers: {
+			a: '1A',
+			b: '5A',
+			c: '100A',
+			d: '0'
+		},
+		correctAnswer: 'd'
+	},
+	{
+		question: "What is the value of drain current when Vgs=pinch off voltage?",
+		answers: {
+			a: '0A',
+			b: '1A',
+			c: '2A',
+			d: 'Cannot be Determined'
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "For an n-channel FET, What is the direction of current flow?",
+		answers: {
+			a: 'Source to Drain',
+			b: 'Drain to Source',
+			c: 'Gate to Source',
+			d: 'Gate to Drain'
+		},
+		correctAnswer: 'b'
+	},
+	{
+		question: "For an p-channel FET, What is the direction of current flow?",
+		answers: {
+			a: 'Source to Drain',
+			b: 'Drain to Source',
+			c: 'Gate to Source',
+			d: 'Gate to Drain'
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "The action of JFET in its equivalent circuit can be represented as which of the following?",
+		answers: {
+			a: 'Current controlled current source',
+			b: 'Current controlled voltage source',
+			c: 'Voltage controlled current source',
+			d: 'Voltage controlled Voltage source'
 		},
 		correctAnswer: 'c'
+	},
+	{
+		question: "Where does the transfer curve lie for a p- channel FET?",
+		answers: {
+			a: 'First Quadrant',
+			b: 'Second Quadrant',
+			c: 'Third Quadrant',
+			d: 'Fourth Quadrant'
+		},
+		correctAnswer: 'b'
 	}
 ];
 
@@ -47,6 +109,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 						+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
 						+ letter + ': '
 						+ questions[i].answers[letter]
+						+ '<br>'
 					+ '</label>'
 				);
 			}
