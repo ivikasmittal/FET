@@ -1,21 +1,61 @@
 var myQuestions = [
 	{
-		question: "What is 10/2?",
+		question: "How many terminals does the FET have ?.",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
+			a: '1',
+			b: '2',
+			c: '3',
+			d: '4',
+		},
+		correctAnswer: 'c'
+	},
+	{
+		question: "The name for the terminals of the FET are ______",
+		answers: {
+			a: 'Cathode, Anode, Grid',
+			b: 'Emitter, Base, Collector',
+			c: 'Source, Gate, Drain',
+			d: 'None of the above',
+		},
+		correctAnswer: 'c'
+	},
+	{
+		question: "A JFET is also called ______ transistor",
+		answers: {
+			a: 'Unipolar',
+			b: 'Bipolar',
+			c: 'Unijunctional',
+			d: 'None of the above',
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "True or False : FET is a voltage controlled device.",
+		answers: {
+			a: 'True',
+			b: 'False',
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "The input impedance of a JFET is ______ that of an ordinary transistor",
+		answers: {
+			a: 'Equal to',
+			b: 'More than',
+			c: 'Less than',
+			d: 'None of the above',
 		},
 		correctAnswer: 'b'
 	},
 	{
-		question: "What is 30/3?",
+		question: "The input impedance of a JFET is ______ that of an ordinary transistor",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
+			a: 'Equal to',
+			b: 'More than',
+			c: 'Less than',
+			d: 'None of the above',
 		},
-		correctAnswer: 'c'
+		correctAnswer: 'b'
 	}
 ];
 
@@ -47,6 +87,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 						+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
 						+ letter + ': '
 						+ questions[i].answers[letter]
+						+ '<br>'
 					+ '</label>'
 				);
 			}

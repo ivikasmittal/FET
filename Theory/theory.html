@@ -3,21 +3,22 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../styles.css">
 	<title>Characteristics of FET</title>
 </head>
 <body>
 	<header>
 		<nav class="navigation_bar">
-			<a href="../References/references.html">References</a>
-			<a href="../PostTest/post_test.html">Post Test</a>
-			<a href="../Simulation/simulation.html">Simulation</a>
-			<a href="../Procedure/procedure.html">Procedure</a>
-			<a href="../PreTest/pre_test.html">Pre Test</a>
+			<a href="../index.html">Aim</a>	
 			<a href="#">Theory</a>
-			<a href="../index.html">Aim</a>			
+			<a href="../PreTest/pre_test.html">Pre Test</a>
+			<a href="../Procedure/procedure.html">Procedure</a>
+			<a href="../Simulation/simulation.html">Simulation</a>
+			<a href="../PostTest/post_test.html">Post Test</a>
+			<a href="../References/references.html">References</a>
 		</nav>
 	</header>
 
@@ -27,59 +28,92 @@
 			<h1 class="content_heading">Theory</h1>
 			<br>
 			<p>
-			The Field Effect Transistor (FET) is a three terminal device. Three terminals are Drain (D), Source (S) and Gate (G). In FET, current flow is due to only one type of charge particles, either electrons or holes. So FET is known as unipolar device. The name ”field effect”  is derived from the fact that the current is controlled by an electric field set up in the device by an externally applied voltage. Thus FET is a voltage controlled device while bipolar transistor is current controlled device.
+				The Field Effect Transistor (FET) is a three terminal device. Three terminals are Drain (D), Source (S) and Gate (G). In FET, current flow is due to only one type of charge particles, either electrons or holes. So FET is known as unipolar device. The name ”field effect”  is derived from the fact that the current is controlled by an electric field set up in the device by an externally applied voltage. Thus FET is a voltage controlled device while bipolar transistor is current controlled device.
+			</p>
 			<br>
-			The FET differs bipolar transistor in the following important characteristics:-
-			<ol class="lists">
-				<li>Its operation depends on the flow of majority carriers only. It is therefore a unipolar device (one type of carriers).</li>
-				<li>It is simple to fabricate and occupies less space in integrated form.</li>
-				<li>It exhibits a high input resistance typically many Mega-ohms.</li>
-				<li>It is less noisy than bipolar transistor.</li>
-				<li>It exhibits no offset voltage at zero drain current and hence makes an excellent signal chopper.</li>
-			</ol>
+			<p>
+				The FET differs bipolar transistor in the following important characteristics:-
+				<ol class="lists">
+					<li>Its operation depends on the flow of majority carriers only. It is therefore a unipolar device (one type of carriers).</li>
+					<li>It is simple to fabricate and occupies less space in integrated form.</li>
+					<li>It exhibits a high input resistance typically many Mega-ohms.</li>
+					<li>It is less noisy than bipolar transistor.</li>
+					<li>It exhibits no offset voltage at zero drain current and hence makes an excellent signal chopper.</li>
+				</ol>
+			</p>
 			<br>
-			In this experiment we will obtain output characteristics of N-channel FET using CS (Common source) Configuration. It is also known as drain characteristics.
+			<p>
+				In this experiment we will obtain output characteristics of N-channel FET using CS (Common source) Configuration. It is also known as drain characteristics.
+			</p>
 			<br>
-			When gate to source voltage VGS is zero, N type channel is open so drain current will flow through it. As we increase negative voltage on the gate terminal, VGS =-1V, -2V, -3V etc., drain current reduces. The reduction in drain current is due to reduction in width of channel. As we increase negative gate voltage, width of depletion region spreads in the channel. Depletion region (generated field due to reverse bias) does not have charge carriers so width of channel will reduce. As we increase negative value of VGS , penetration of depletion region (field) will be more and more due to which channel becomes narrower. At one point drain current reduces to zero when entire channel will be closed due to penetration of depletion region.
+			<p>
+				When gate to source voltage VGS is zero, N type channel is open so drain current will flow through it. As we increase negative voltage on the gate terminal, VGS =-1V, -2V, -3V etc., drain current reduces. The reduction in drain current is due to reduction in width of channel. As we increase negative gate voltage, width of depletion region spreads in the channel. Depletion region (generated field due to reverse bias) does not have charge carriers so width of channel will reduce. As we increase negative value of VGS , penetration of depletion region (field) will be more and more due to which channel becomes narrower. At one point drain current reduces to zero when entire channel will be closed due to penetration of depletion region.
+			</p>
 			<br>
+			<P>
 			The value of VGS at which drain current reduces to zero is called cut-off voltage VGS( off). Normally Drain current reduces to zero at VGS = -Vp. Thus VGS (off) = -Vp where VP is pinch-off voltage. Pinch-off voltage VP is the value of voltage VDS at which drain current becomes constant.
+			</P>
 			<br>
+			<p>
 			There are two types of FETs:
-			<ol class="lists">
-				<li>Junction Field Effect transistor (JFET).</li>
-				<li>Metal Oxide Semiconductor FET (MOSFET)</li>
-			</ol>
+				<ol class="lists">
+					<li>Junction Field Effect transistor (JFET).</li>
+					<li>Metal Oxide Semiconductor FET (MOSFET)</li>
+				</ol>
+			</p>
 			<br>
-			The common source configuration of an N-channel JFET is shown in following figure. Some important definitions about FET are given below:-
-			<ol class="lists">
-				<li>Drain resistance <b>(r<sub>d</sub>) = V<sub>ds</sub>/I<sub>d</sub> when V<sub>gs</sub> constant</b></li>
-				<li>Trans conductance <b>(g) = I<sub>d</sub>/V<sub>gs</sub> when V<sub>ds</sub> constant.</b> </li>
-				<li>Amplification factor <b>(μ) = (r<sub>d</sub>×g) when I<sub>d</sub> constant.</b></li>
-			</ol>
+			<p>
+				The common source configuration of an N-channel JFET is shown in following figure. Some important definitions about FET are given below:-
+				<ol class="lists">
+					<li>Drain resistance <b>(r<sub>d</sub>) = V<sub>ds</sub>/I<sub>d</sub> when V<sub>gs</sub> constant</b></li>
+					<li>Trans conductance <b>(g) = I<sub>d</sub>/V<sub>gs</sub> when V<sub>ds</sub> constant.</b> </li>
+					<li>Amplification factor <b>(μ) = (r<sub>d</sub>×g) when I<sub>d</sub> constant.</b></li>
+				</ol>
+			</p>
 			<br>
-			<b>Circuit Diagram:-</b> The circuit diagram for determining the characteristic for an N-channel FET with shorted-gate is given in figure:-
+			<p>
+				<b>Circuit Diagram:-</b> The circuit diagram for determining the characteristic for an N-channel FET with shorted-gate is given in figure:-
+			</p>
 			<br>
-			<b>The Circuit Diagram for FET with shorted-gate will go here which we have an svg of.</b>
+			<p>
+				<b>The Circuit Diagram for FET with shorted-gate will go here which we have an svg of.</b>
+			</p>
 			<br><br>
-			<b>Drain Characteristics:-</b>
+			<p>
+				<b>Drain Characteristics:-</b>
+			</p>
 			<br>
-			Initially there is no voltage applied between gate and the source. It acts as the short circuit. The current is formed when majority charge carriers move from to source to drain. So when there is no voltage applied, there is no potential to attract the majority carries at the drain and so the current at first id zero in the absence of no external voltage.
+			<p>
+				Initially there is no voltage applied between gate and the source. It acts as the short circuit. The current is formed when majority charge carriers move from to source to drain. So when there is no voltage applied, there is no potential to attract the majority carries at the drain and so the current at first id zero in the absence of no external voltage.
+			</p>
 			<br>
-			Now a very small amount of voltage is applied between Gate and Source (Vgs) due to which the JFET that acts as a simple resistor. The drain current ID increases gradually and reaches the knee point. After a certain point the value of current enters the pinch off region after which the current almost becomes constant and shows no change with the change In Vgs.
+			<p>
+				Now a very small amount of voltage is applied between Gate and Source (Vgs) due to which the JFET that acts as a simple resistor. The drain current ID increases gradually and reaches the knee point. After a certain point the value of current enters the pinch off region after which the current almost becomes constant and shows no change with the change In Vgs.
+			</p>
 			<br>
-			<b>Output Characteristics of FET with shorted gate goes here which we have svg of.</b>
+			<p>
+				<b>Output Characteristics of FET with shorted gate goes here which we have svg of.</b>
+			</p>
 			<br>
-			<b>Transfer Characteristics:-</b>
+			<p>
+				<b>Transfer Characteristics:-</b>
+				<br><br>
+				The transfer characteristic for a JFET can be determined experimentally, keeping drain-source voltage (V<sub>DS</sub>) constant and determining drain current (I<sub>D</sub>>) for various values of gate-source voltage (V<sub>GS</sub>>). The curve is plotted between gate-source voltage (V<sub>GS</sub>>) and drain current (I<sub>D</sub>). It is similar to the transconductance characteristic of a vacuum tube or a transistor. It is observed that
+				<ol class="lists">
+					<li>Drain current decreases with the increase in negative gate-source bias.</li>
+					<li>Drain current, I<sub>D</sub> = I<sub>DSS</sub> when V<sub>GS</sub> = 0.</li>
+					<li>Drain current, I<sub>D</sub> = 0 when V<sub>GS</sub> = V<sub>D</sub>.</li>
+				</ol>
+			</p>
 			<br>
-			The transfer characteristic for a JFET can be determined experimentally, keeping drain-source voltage (VDS) constant and determining drain current (ID) for various values of gate-source voltage (VGS). The curve is plotted between gate-source voltage (VGS) and drain current (ID). It is similar to the transconductance characteristic of a vacuum tube or a transistor. It is observed that
-			<ol class="lists">
-				<li>Drain current decreases with the increase in negative gate-source bias.</li>
-				<li>Drain current, I<sub>D</sub> = I<sub>DSS</sub> when V<sub>GS</sub> = 0.</li>
-				<li>Drain current, I<sub>D</sub> = 0 when V<sub>GS</sub> = V<sub>D</sub>.</li>
-			</ol>
+			<p>
+				The transfer characteristic can also be derived from the drain characteristic by noting values of drain current (I<sub>D</sub>>) corresponding to various values of gate-source voltage (V<sub>GS</sub>) for a constant drain-source voltage and plotting them.
+			</p>
+			<br>
+			<p id="pchanel">
+				It may be noted that a P-channel JFET operates in the same way and have the similar characteristics as an N-channel JFET except that channel carriers are holes instead of electrons and the polarities of VGS and VDS are reversed.
 			</p>
 		</div>
-
 	</div>
 
 </body>
